@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiago Pedro | Analista de Infraestrutura & Segurança</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00e5ff;
+            --secondary: #2563eb;
+            --bg: #0b0f1a;
+            --surface: #161d2f;
+            --text: #e2e8f0;
+            --text-dim: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+        /* Scrollbar Personalizada */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--surface); border-radius: 10px; border: 2px solid var(--primary); }
+
+        /* Header / Hero */
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.15) 0%, rgba(11, 15, 26, 1) 100%);
+            padding: 20px;
+        }
+
+        .hero-content { text-align: center; max-width: 800px; }
+        .hero-content h1 { font-size: 4rem; font-weight: 800; color: #fff; margin-bottom: 1rem; letter-spacing: -1px; }
+        .hero-content h1 span { color: var(--primary); }
+        .hero-content p { font-size: 1.25rem; color: var(--text-dim); margin-bottom: 2rem; }
+
+        .contact-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px; }
+        .pill { background: var(--surface); padding: 10px 20px; border-radius: 50px; font-size: 0.9rem; border: 1px solid #2d3748; display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; transition: 0.3s; }
+        .pill:hover { border-color: var(--primary); background: rgba(0, 229, 255, 0.05); }
+
+        /* Seções */
+        .container { max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
+        h2 { font-size: 2.2rem; margin-bottom: 50px; display: flex; align-items: center; gap: 15px; }
+        h2::after { content: ""; height: 2px; flex-grow: 1; background: linear-gradient(to right, var(--primary), transparent); }
+
+        /* Grid de Experiência e Educação */
+        .grid-main { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
+        
+        .timeline-item { position: relative; padding-left: 30px; border-left: 2px solid var(--surface); margin-bottom: 40px; }
+        .timeline-item::before { content: ""; position: absolute; left: -7px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 10px var(--primary); }
+        .timeline-item h3 { color: #fff; font-size: 1.4rem; }
+        .timeline-item .company { color: var(--primary); font-weight: 600; font-size: 1rem; margin-bottom: 10px; display: block; }
+        .timeline-item ul { list-style: none; margin-top: 10px; color: var(--text-dim); font-size: 0.95rem; }
+        .timeline-item li::before { content: "▹"; color: var(--primary); margin-right: 8px; }
+
+        /* Cards de Competências */
+        .skills-category { background: var(--surface); padding: 25px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #2d3748; }
+        .skills-category h4 { color: var(--primary); margin-bottom: 15px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: var(--bg); padding: 5px 12px; border-radius: 6px; font-size: 0.85rem; border: 1px solid #2d3748; }
+
+        /* Projetos */
+        .project-card { background: var(--surface); border-radius: 15px; padding: 30px; border-bottom: 4px solid var(--secondary); transition: 0.3s; }
+        .project-card:hover { transform: translateY(-5px); border-bottom-color: var(--primary); }
+
+        @media (max-width: 900px) {
+            .grid-main { grid-template-columns: 1fr; }
+            .hero-content h1 { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-content">
+            <h1>Tiago <span>Pedro</span></h1>
+            <p>Infraestrutura de TI | Redes | Cibersegurança</p>
+            
+            <div class="contact-pills">
+                <a href="tel:81994332510" class="pill"><i class="fas fa-phone"></i> (81) 99433-2510</a>
+                <a href="mailto:tiago.pedro22.tp@gmail.com" class="pill"><i class="fas fa-envelope"></i> tiago.pedro22.tp@gmail.com</a>
+                <a href="https://linkedin.com/in/tiago-pedro-3b8b94104/" target="_blank" class="pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Tiago1022" target="_blank" class="pill"><i class="fab fa-github"></i> GitHub</a>
+                <span class="pill"><i class="fas fa-location-dot"></i> Recife - PE</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="grid-main">
+            <div>
+                <h2><i class="fas fa-briefcase"></i> Experiência</h2>
+                
+                <div class="timeline-item">
+                    <h3>Analista de Infraestrutura de TI</h3>
+                    <span class="company">Hemope – Fundação de Hematologia e Hemoterapia de PE</span>
+                    <ul>
+                        <li>Suporte técnico corporativo e infraestrutura de redes em ambiente hospitalar.</li>
+                        <li>Diagnóstico de incidentes e administração de equipamentos de rede.</li>
+                        <li>Monitoramento de conectividade e configuração de periféricos.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Proprietário & Técnico de Infra</h3>
+                    <span class="company">TechF5</span>
+                    <ul>
+                        <li>Consultoria em cabeamento estruturado e redes (MikroTik/Switches).</li>
+                        <li>Implementação de sistemas de segurança (CFTV, Alarmes, Portaria).</li>
+                        <li>Gestão de segurança digital e manutenção de hardware.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Técnico em Informática e Redes</h3>
+                    <span class="company">SEMAS – Secretaria Estadual de Meio Ambiente</span>
+                    <ul>
+                        <li>Responsável pela TI do Zoológico de Dois Irmãos.</li>
+                        <li>Apoio técnico em processos licitatórios de tecnologia.</li>
+                        <li>Manutenção e administração da infraestrutura local.</li>
+                    </ul>
+                </div>
+
+                <h2 style="margin-top: 60px;"><i class="fas fa-graduation-cap"></i> Educação</h2>
+                <div class="timeline-item">
+                    <h3>Pós-graduação em Cibersegurança</h3>
+                    <span class="company">UNINTER</span>
+                </div>
+                <div class="timeline-item">
+                    <h3>Pós-graduação em Engenharia de Software</h3>
+                    <span class="company">Faculdade Metropolitana de SP</span>
+                </div>
+                <div class="timeline-item">
+                    <h3>Sistemas de Informação</h3>
+                    <span class="company">Centro Universitário Joaquim Nabuco</span>
+                </div>
+            </div>
+
+            <div>
+                <h2><i class="fas fa-code-branch"></i> Hard Skills</h2>
+                
+                <div class="skills-category">
+                    <h4>Redes & Infra</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Mikrotik</span>
+                        <span class="skill-tag">VPN</span>
+                        <span class="skill-tag">Switches</span>
+                        <span class="skill-tag">Cabeamento Estruturado</span>
+                        <span class="skill-tag">Diagnóstico MTR/Packet Loss</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Segurança</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Cibersegurança</span>
+                        <span class="skill-tag">Hardening</span>
+                        <span class="skill-tag">Monitoramento</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Sistemas</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Virtualização</span>
+                        <span class="skill-tag">CFTV/DVR</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h4>Projetos Sociais</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">
+                        Professor de informática no <strong>Projeto Tamo Junto</strong>, promovendo inclusão digital para jovens.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="background: rgba(255,255,255,0.02); border-radius: 30px;">
+        <h2><i class="fas fa-flask"></i> Destaque: Automação</h2>
+        <div class="project-card">
+            <h3>Automação Residencial com IoT</h3>
+            <p style="margin: 15px 0; color: var(--text-dim);">
+                Desenvolvimento de um ecossistema de controle integrado utilizando <strong>ESP8266 e Arduino</strong>. O projeto foca na integração de dispositivos via Wi-Fi, permitindo monitoramento e controle remoto em tempo real.
+            </p>
+            <div class="skill-tags">
+                <span class="skill-tag">ESP8266</span>
+                <span class="skill-tag">Arduino</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">IoT</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 50px 20px;">
+            <p style="color: var(--text-dim);">© 2026 Tiago Pedro • Analista de Infraestrutura</p>
+        </div>
+    </footer>
+
+</body>
+</html>
